@@ -1,0 +1,5 @@
+package com.gml.cliente.controller;
+
+public class ClienteController {
+
+}

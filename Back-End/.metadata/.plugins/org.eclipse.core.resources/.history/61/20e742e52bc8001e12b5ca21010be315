@@ -1,0 +1,5 @@
+package com.gml.cliente.repository;
+
+public interface ClienteRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.gml.cliente.util;
+
+public class Cors {
+
+}

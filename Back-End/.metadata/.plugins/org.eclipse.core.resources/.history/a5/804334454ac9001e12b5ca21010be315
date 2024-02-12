@@ -1,0 +1,68 @@
+package com.gml.cliente.service;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.gml.cliente.model.ClienteEntity;
+import com.gml.cliente.repository.ClienteRepository;
+import com.gml.cliente.serviceImpl.ClienteServiceImpl;
+
+@ExtendWith(MockitoExtension.class)
+public class ClienteServiceTest {
+
+	@Mock
+	ClienteRepository clienteRepository;
+	
+	@InjectMocks
+	ClienteServiceImpl clienteServiceImpl;
+	
+	
+	@Test
+	void finAllCliente() {
+		when(clienteRepository.findAll()).thenReturn(getClientList());
+		List<ClienteEntity> resp = clienteServiceImpl.finAllCliente();
+		assertNotNull(resp);
+		assertFalse(false);
+	}
+	
+	@Test
+	void findBySharedKeyOk() {
+		when(clienteRepository.findById(anyString())).thenReturn(Optional.of(getClient()));
+		ClienteEntity resp = clienteServiceImpl.findBySharedKey("prueba");
+		assertNotNull(resp);
+		assertFalse(false);
+	}
+	
+	private List<ClienteEntity> getClientList() {
+		List<ClienteEntity> list = new ArrayList<>();
+		ClienteEntity cliente = new ClienteEntity();
+		cliente.setSharedKey("prueba");
+		cliente.setNombre("prueba");
+		cliente.setTelefono(1234);
+		cliente.setEmail("prueba");
+		list.add(cliente);
+		return list;
+	}
+	
+	private ClienteEntity getClient() {
+		ClienteEntity cliente = new ClienteEntity();
+		cliente.setSharedKey("prueba");
+		cliente.setNombre("prueba");
+		cliente.setTelefono(1234);
+		cliente.setEmail("prueba");
+		return cliente;
+	}
+	
+}

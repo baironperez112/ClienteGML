@@ -1,0 +1,10 @@
+package com.gml.cliente.exceptions;
+
+/**
+ * Excepcion para peticiones con datos incorrectos.
+ * @author BayronPerez
+ */
+
+public class NotFoundException {
+
+}

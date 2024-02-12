@@ -1,0 +1,5 @@
+package com.gml.cliente.dto;
+
+public class ApiResponseADE {
+
+}
