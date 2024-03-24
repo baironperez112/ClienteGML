@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ClienteServiceTest" project="cliente" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="com.gml.cliente.service.ClienteServiceTest" time="1.546" displayname="ClienteServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.gml.cliente.service.ClienteServiceTest]">
-    <testcase name="findBySharedKeyOk" classname="com.gml.cliente.service.ClienteServiceTest" time="1.528" displayname="findBySharedKeyOk()" uniqueid="[engine:junit-jupiter]/[class:com.gml.cliente.service.ClienteServiceTest]/[method:findBySharedKeyOk()]"/>
-    <testcase name="finAllCliente" classname="com.gml.cliente.service.ClienteServiceTest" time="0.005" displayname="finAllCliente()" uniqueid="[engine:junit-jupiter]/[class:com.gml.cliente.service.ClienteServiceTest]/[method:finAllCliente()]"/>
-    <testcase name="saveCliente" classname="com.gml.cliente.service.ClienteServiceTest" time="0.011" displayname="saveCliente()" uniqueid="[engine:junit-jupiter]/[class:com.gml.cliente.service.ClienteServiceTest]/[method:saveCliente()]"/>
-  </testsuite>
-</testrun>

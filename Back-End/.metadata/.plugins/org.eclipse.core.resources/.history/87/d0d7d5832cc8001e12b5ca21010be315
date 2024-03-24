@@ -1,5 +1,0 @@
-package com.gml.cliente.service;
-
-public interface ClienteService {
-
-}
